@@ -13,6 +13,13 @@ This project currently focuses on recommending **English-language movies**, usin
 
 The project includes data preprocessing, feature engineering, model training, and evaluation steps to ensure optimal recommendations.
 
+## Techniques Used
+### TF-IDF Vectorizer
+The **Term Frequency-Inverse Document Frequency (TF-IDF) Vectorizer** is used to convert textual data (such as movie descriptions or genres) into numerical representations. TF-IDF assigns weights to words based on their importance within a document relative to a collection of documents. This helps in identifying key terms that differentiate movies from each other, improving the accuracy of content-based recommendations.
+
+### Cosine Similarity
+**Cosine Similarity** measures the similarity between two vectors by calculating the cosine of the angle between them. In this project, cosine similarity is used to compare the TF-IDF vectors of different movies. A higher cosine similarity score between two movies indicates that they share more common features, making them good recommendations for users.
+
 ## Features
 - Content-based filtering
 - Collaborative filtering
